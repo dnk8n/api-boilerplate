@@ -1,0 +1,23 @@
+[flake8]
+max-line-length = 79
+output-file = flake8.txt
+max-complexity = 10
+tee = True
+exclude =
+    .cache
+    .coverage
+    .eggs
+    .git
+    .idea
+    .mypy*
+    .pytest*
+    .tox
+    .venv
+    *.egg-info
+    __pycache__
+    htmlcov
+select = C,E,F,W,B,B950
+extend-ignore =
+    # See https://github.com/PyCQA/pycodestyle/issues/373
+    # See https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
+    E203, E231, E501,
